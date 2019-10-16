@@ -1,0 +1,39 @@
+.account-item {
+  width: 100%;
+  position: relative;
+  padding: 0 40px 0 68px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+
+  &__header {
+    margin-bottom: 15px;
+  }
+
+  &__total-sum {
+    margin-top: 3px;
+    font-weight: bold;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+  }
+
+  &__info {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  &__more-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__last-sum {
+    color: var(--primary-text-color);
+  }
+}

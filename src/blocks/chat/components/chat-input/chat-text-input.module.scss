@@ -1,0 +1,48 @@
+.chat-text-input {
+  width: 100%;
+  display: flex;
+
+  &__wrapper {
+    width: calc(100% - 40px - 50px);
+    max-width: calc(100% - 40px - 50px);
+    position: relative;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  &__field {
+    position: relative;
+    z-index: 1;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    max-height: 200px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    outline: none;
+    box-sizing: border-box;
+    align-self: center;
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    visibility: hidden;
+    color: white;
+    opacity: 0.3;
+
+    &_visible {
+      visibility: visible;
+    }
+  }
+
+  &__send-button {
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    align-self: flex-end;
+  }
+}

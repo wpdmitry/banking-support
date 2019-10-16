@@ -1,0 +1,16 @@
+.chat-text-message {
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+
+  &_theme_dark {
+    background-color: #333333;
+    color: white;
+  }
+
+  &_theme_light {
+    background-color: white;
+    color: #333333;
+  }
+}

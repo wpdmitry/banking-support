@@ -1,0 +1,35 @@
+.chat-input {
+  width: 100%;
+
+  &__action {
+    margin-right: 20px;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  &__text-field {
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: calc(100% - 40px - 50px);
+    max-width: calc(100% - 40px - 50px);
+    max-height: 200px;
+    word-wrap: break-word;
+    overflow-y: auto;
+    outline: none;
+    box-sizing: border-box;
+    align-self: center;
+  }
+
+  &__send-button {
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    align-self: flex-end;
+  }
+}

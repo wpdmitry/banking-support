@@ -1,0 +1,64 @@
+.operation-item {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px 0;
+
+  &:hover {
+    & .operation-item__bg {
+      visibility: visible;
+    }
+
+    & .operation-item__message-button {
+      visibility: visible;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    background-color: var(--dark-gray-color);
+    top: 0;
+    right: -20px;
+    bottom: 0;
+    left: -20px;
+    border-radius: 6px;
+    visibility: hidden;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+  }
+
+  &__logo {
+    margin-right: 10px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__date {
+    color: var(--secondary-text-color);
+  }
+
+  &__sum {
+    font-size: 0.9rem;
+  }
+
+  &__message-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-20%);
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,10 @@
+.nav-link {
+  & > a {
+    color: black;
+    text-decoration: none;
+
+    &:visited {
+      color: black;
+    }
+  }
+}
