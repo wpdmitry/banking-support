@@ -35,6 +35,7 @@ function App() {
                 <Route path="/accounts/:accountId" component={Account} />
 
                 <Tabs
+                  initialPath="/accounts"
                   tabs={[
                     { title: "Счета", path: "/accounts", component: Accounts },
                     { title: "Вклады", path: "/deposits", component: Deposits }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Redirect, Route } from "react-router-dom";
 
 import bcm from "../../tools/bcm";
 
@@ -16,10 +16,11 @@ type Tab = {
 };
 
 type TabsProps = {
+  initialPath: string;
   tabs: Tab[];
 };
 
-function Tabs({ tabs }: TabsProps) {
+function Tabs({ initialPath, tabs }: TabsProps) {
   return (
     <div className={b()}>
       <div className={b("nav-links")}>
@@ -39,6 +40,7 @@ function Tabs({ tabs }: TabsProps) {
         {tabs.map(({ path, component }) => (
           <Route key={path} path={path} component={component} />
         ))}
+        <Redirect to={initialPath} />
       </div>
     </div>
   );
