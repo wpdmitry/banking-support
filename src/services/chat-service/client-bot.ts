@@ -150,7 +150,7 @@ class ClientBot {
         timerId = setInterval(() => {
           const stickerId = `${getRandomInt(22, 24)}`;
           this.sendStickerMessage(stickerId);
-        }, 10000);
+        }, 20000);
       }
     });
   }
